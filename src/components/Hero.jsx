@@ -5,7 +5,7 @@ import heroImage from '../assets/hero-image.png'
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 pt-44 pb-16 container mx-auto">
+    <section id="home" className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 pt-44 pb-16 container mx-auto">
       {/* left col */}
       <div className="w-full md:w-1/2 space-y-8 ">
         {/* star badge */}

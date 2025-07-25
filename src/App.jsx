@@ -1,5 +1,7 @@
+import CompanyLogo from "./components/CompanyLogo";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import PusposeSection from "./components/PusposeSection";
 import "./index.css";
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <div className="overflow-hidden">
         <Navbar />
         <Hero />
+        <CompanyLogo/>
+        <PusposeSection/>
       </div>
     </main>
   );

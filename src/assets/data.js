@@ -14,7 +14,7 @@ export const features = [
     }
   ];
 
-//   features section
+//   features section 
 
   const features = [
     {
