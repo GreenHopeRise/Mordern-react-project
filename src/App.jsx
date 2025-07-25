@@ -1,4 +1,5 @@
 
+import Navbar from './components/Navbar'
 import './index.css'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1 className='underline bg-amber-900'>hi</h1>
+      <Navbar/>
     </>
   )
 }
