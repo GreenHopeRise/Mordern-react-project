@@ -1,8 +1,10 @@
 import CompanyLogo from "./components/CompanyLogo";
 import FeatureSection from "./components/FeatureSection";
 import Hero from "./components/Hero";
+import MonitorSection from "./components/MonitorSection";
 import Navbar from "./components/Navbar";
 import PusposeSection from "./components/PusposeSection";
+import ScheduleSection from "./components/ScheduleSection";
 import "./index.css";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <CompanyLogo/>
         <PusposeSection/>
         <FeatureSection/>
+        <ScheduleSection/>
+        <MonitorSection/>
       </div>
     </main>
   );
