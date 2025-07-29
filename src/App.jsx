@@ -1,12 +1,15 @@
 import CompanyLogo from "./components/CompanyLogo";
 import FeatureSection from "./components/FeatureSection";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import MonitorSection from "./components/MonitorSection";
 import Navbar from "./components/Navbar";
+import NewsletterSec from "./components/NewsletterSec";
 import PricingSection from "./components/PricingSection";
 import PusposeSection from "./components/PusposeSection";
 import ScheduleSection from "./components/ScheduleSection";
 import ServicesSection from "./components/ServicesSection";
+import TestimonialSection from "./components/TestimonialSection";
 import "./index.css";
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
         <MonitorSection/>
         <PricingSection/>
         <ServicesSection/>
+        {/* <TestimonialSection/> */}
+        <NewsletterSec/>
+        <Footer/>
       </div>
     </main>
   );
