@@ -1,9 +1,12 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
-
+import { motion } from "motion/react"
+import { fadeIn } from "../utils/motion";
 const Footer = () => {
     return (
-        <footer className="ax-w-7xl mx-auto px-4 py-16 justify-around footer sm:footer-horizontal bg-black text-neutral-content p-10 text-xl ">
+        <motion.footer variants={fadeIn('up',0.6)}
+            initial="hidden"
+            whileInView="show" className="ax-w-7xl mx-auto px-4 py-16 justify-around footer sm:footer-horizontal bg-black text-neutral-content p-10 text-xl ">
             <nav>
                 <h6 className="footer-title">Services</h6>
                 <a className="link link-hover">Branding</a>
@@ -24,7 +27,7 @@ const Footer = () => {
                 <a className="link link-hover">Privacy policy</a>
                 <a className="link link-hover">Cookie policy</a>
             </nav>
-        </footer>
+        </motion.footer>
     );
 };
 

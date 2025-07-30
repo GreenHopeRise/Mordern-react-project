@@ -3,7 +3,8 @@ import { BiTime } from 'react-icons/bi';
 import { BsStack } from 'react-icons/bs';
 import { FiSettings } from 'react-icons/fi';
 import { HiLightBulb } from 'react-icons/hi';
-
+import { motion } from "motion/react"
+import { fadeIn } from '../utils/motion';
 const ServicesSection = () => {
     const services = [
     {
@@ -35,7 +36,11 @@ const ServicesSection = () => {
         <section id='services' className='py-20 container mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='flex flex-col md:flex-row items-center justify-between  gap-12 lg:gap-24'>
                 {/* header */}
-                <div className='md:w-1/3 w-full'> 
+                <motion.div 
+                variants={fadeIn('right',0.2)}
+            initial="hidden"
+            whileInView="show"
+                className='md:w-1/3 w-full'> 
                     <h2 className='text-3xl md:text-4xl font-bold mb-6 md:w-4/6'>Future of support with new shape</h2>
                     <p className='text-gray-600 text-lg mb-4 md:w-4/5'>Discuss your goals, determine succes metrics, identify problems</p>
                     <div className='space-y-3' >
@@ -55,14 +60,18 @@ const ServicesSection = () => {
                         </div>
                     </div>
                     <button className='bg-indigo-600 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-indigo-700 transition-colors mt-5'>Get Started</button>
-                </div>
+                </motion.div>
 
 
 
 
 
                 {/* service  */}
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                <motion.div 
+                variants={fadeIn('left',0.4)}
+            initial="hidden"
+            whileInView="show"
+                className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     {
                         services.map((service, index) =>(
                             <div key={index} className='bg-white max-w-72 cursor-pointer rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 '>
@@ -77,7 +86,7 @@ const ServicesSection = () => {
                             </div>
                         ))
                     }
-                </div>
+                </motion.div>
             </div>
         </section>
     );

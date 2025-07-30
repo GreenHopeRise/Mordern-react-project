@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-
+import { motion } from "motion/react"
+import { fadeIn } from "../utils/motion";
 const PricingSection = () => {
     const [productCount, setProductCount] = useState(1);
     const starterPrice = Math.round((4000 * productCount) / 50);
     const businessPrice = Math.round((7500 * productCount) / 50);
     return (
-        <section className="py-20 px-4">
+        <motion.section 
+        variants={fadeIn('up',0.2)}
+            initial="hidden"
+            whileInView="show"
+        className="py-20 px-4">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
                     Pricing
@@ -38,7 +43,7 @@ const PricingSection = () => {
                     <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer">started</button>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

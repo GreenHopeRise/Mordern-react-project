@@ -9,7 +9,7 @@ import PricingSection from "./components/PricingSection";
 import PusposeSection from "./components/PusposeSection";
 import ScheduleSection from "./components/ScheduleSection";
 import ServicesSection from "./components/ServicesSection";
-import TestimonialSection from "./components/TestimonialSection";
+
 import "./index.css";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
         <MonitorSection/>
         <PricingSection/>
         <ServicesSection/>
+        {/* <TestimonialSection/> */}
         {/* <TestimonialSection/> */}
         <NewsletterSec/>
         <Footer/>
